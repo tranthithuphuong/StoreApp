@@ -1,39 +1,39 @@
 //
-//  ProductViewController.swift
+//  NewProductViewController.swift
 //  STORE
 //
-//  Created by chuottp on 11/01/2023.
+//  Created by chuottp on 14/01/2023.
 //
 
 import UIKit
 
-class ProductViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
- 
+class NewProductViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
+    var newProducts : Products = []
     
-    
-    var products : Products = []
-    @IBOutlet weak var cltProductView: UICollectionView!
+    @IBOutlet weak var cltNewProductView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getProductsFromAPI()
-        cltProductView.delegate = self
-        cltProductView.dataSource = self
+        getNewProductsFromAPI()
+        cltNewProductView.delegate = self
+        cltNewProductView.dataSource = self
         // Do any additional setup after loading the view.
+
+        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         
         let screenWith = UIScreen.main.bounds.width
         layout.itemSize = CGSize(width: screenWith/2-10, height: 278)
-        cltProductView.collectionViewLayout = layout
+        cltNewProductView.collectionViewLayout = layout
             
     }
-
     
-    func getProductsFromAPI() {
+    func getNewProductsFromAPI() {
 
-        ProductAPI.init().getProducts { productsResponse in
-                self.products = productsResponse
-                self.cltProductView.reloadData()
+        ProductAPI.init().getNewProducts { productsResponse in
+                self.newProducts = productsResponse
+                self.cltNewProductView.reloadData()
             }
         
         
@@ -45,33 +45,36 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-        return products.count
+        return newProducts.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cltProductView.dequeueReusableCell(withReuseIdentifier: "ProductIdentifier", for: indexPath)
+        let cell = cltNewProductView.dequeueReusableCell(withReuseIdentifier: "NewProductIdentifier", for: indexPath)
         
-        let currentProduct = products[indexPath.row]
+        let currentProduct = newProducts[indexPath.row]
+        
+        let lblTag = cell.viewWithTag(5) as! UILabel
+        lblTag.layer.cornerRadius = 10
+        lblTag.layer.backgroundColor = CGColor(red: 0, green: 0, blue: 0, alpha: 10)
         
         let imgPicture = cell.viewWithTag(1) as! UIImageView
         imgPicture.image = UIImage(named: "\(currentProduct.anhSANPham)")
         imgPicture.layer.cornerRadius = 5
-
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         tapGestureRecognizer.name = "\(currentProduct.maSANPham)"
         cell.isUserInteractionEnabled = true
         cell.addGestureRecognizer(tapGestureRecognizer)
         
         let lblTitle = cell.viewWithTag(2) as! UILabel
-        lblTitle.text = currentProduct.tenSANPham
+                lblTitle.text = currentProduct.tenSANPham
         
         let lblDescription = cell.viewWithTag(3) as! UILabel
         lblDescription.text = "\(currentProduct.giaTienSANPham)"
-   
         
         return cell
     }
-    
+
     @objc func imageTapped(sender: UITapGestureRecognizer) {
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

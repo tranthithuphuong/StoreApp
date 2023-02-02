@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		614FCCAC2977EB350037E7ED /* ProductByCateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FCCAB2977EB350037E7ED /* ProductByCateViewController.swift */; };
+		614FCCB429780E330037E7ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FCCB329780E330037E7ED /* DetailViewController.swift */; };
+		614FCCB629784F4A0037E7ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FCCB529784F4A0037E7ED /* TabBarViewController.swift */; };
+		61C9F8DA29868B0400EAC4AC /* CartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9F8D929868B0400EAC4AC /* CartsViewController.swift */; };
+		61CD5EEA298BBA700065ED7F /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CD5EE9298BBA700065ED7F /* OrderViewController.swift */; };
+		61CD5EEC298BBB710065ED7F /* OrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CD5EEB298BBB710065ED7F /* OrderAPI.swift */; };
+		61CD5EEE298BC0FB0065ED7F /* AllOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CD5EED298BC0FB0065ED7F /* AllOrderViewController.swift */; };
+		61CD5EF0298BC10D0065ED7F /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CD5EEF298BC10D0065ED7F /* OrderDetailViewController.swift */; };
+		61CD5EF2298BC5030065ED7F /* OrderMoldel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CD5EF1298BC5030065ED7F /* OrderMoldel.swift */; };
+		61CD5EF4298BD0E70065ED7F /* OrderDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CD5EF3298BD0E70065ED7F /* OrderDetailModel.swift */; };
 		61F37DE2296DB2DE00F09A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37DE1296DB2DE00F09A0A /* AppDelegate.swift */; };
 		61F37DE4296DB2DE00F09A0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37DE3296DB2DE00F09A0A /* SceneDelegate.swift */; };
 		61F37DE6296DB2DE00F09A0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37DE5296DB2DE00F09A0A /* ViewController.swift */; };
@@ -18,9 +28,23 @@
 		61F37E02296ED4DE00F09A0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 61F37E01296ED4DE00F09A0A /* Kingfisher */; };
 		61F37E04296ED63300F09A0A /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37E03296ED63300F09A0A /* ProductModel.swift */; };
 		61F37E06296EDDCC00F09A0A /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37E05296EDDCC00F09A0A /* ProductViewController.swift */; };
+		61F37E082972F2FE00F09A0A /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37E072972F2FE00F09A0A /* NewProductViewController.swift */; };
+		61F37E0A2972FE3A00F09A0A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37E092972FE3A00F09A0A /* ShopViewController.swift */; };
+		61F37E0E297305A400F09A0A /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37E0D297305A400F09A0A /* CategoryModel.swift */; };
+		61F37E10297305BD00F09A0A /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F37E0F297305BD00F09A0A /* CategoryAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		614FCCAB2977EB350037E7ED /* ProductByCateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductByCateViewController.swift; sourceTree = "<group>"; };
+		614FCCB329780E330037E7ED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		614FCCB529784F4A0037E7ED /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		61C9F8D929868B0400EAC4AC /* CartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartsViewController.swift; sourceTree = "<group>"; };
+		61CD5EE9298BBA700065ED7F /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		61CD5EEB298BBB710065ED7F /* OrderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAPI.swift; sourceTree = "<group>"; };
+		61CD5EED298BC0FB0065ED7F /* AllOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderViewController.swift; sourceTree = "<group>"; };
+		61CD5EEF298BC10D0065ED7F /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		61CD5EF1298BC5030065ED7F /* OrderMoldel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMoldel.swift; sourceTree = "<group>"; };
+		61CD5EF3298BD0E70065ED7F /* OrderDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailModel.swift; sourceTree = "<group>"; };
 		61F37DDE296DB2DE00F09A0A /* STORE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STORE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F37DE1296DB2DE00F09A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F37DE3296DB2DE00F09A0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +56,10 @@
 		61F37DFB296ED49300F09A0A /* ProductAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
 		61F37E03296ED63300F09A0A /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		61F37E05296EDDCC00F09A0A /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		61F37E072972F2FE00F09A0A /* NewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
+		61F37E092972FE3A00F09A0A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		61F37E0D297305A400F09A0A /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		61F37E0F297305BD00F09A0A /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				61F37DFB296ED49300F09A0A /* ProductAPI.swift */,
+				61F37E0F297305BD00F09A0A /* CategoryAPI.swift */,
+				61CD5EEB298BBB710065ED7F /* OrderAPI.swift */,
 			);
 			path = HandleAPI;
 			sourceTree = "<group>";
@@ -100,6 +130,14 @@
 			children = (
 				61F37DE5296DB2DE00F09A0A /* ViewController.swift */,
 				61F37E05296EDDCC00F09A0A /* ProductViewController.swift */,
+				61F37E072972F2FE00F09A0A /* NewProductViewController.swift */,
+				61F37E092972FE3A00F09A0A /* ShopViewController.swift */,
+				614FCCAB2977EB350037E7ED /* ProductByCateViewController.swift */,
+				614FCCB329780E330037E7ED /* DetailViewController.swift */,
+				61C9F8D929868B0400EAC4AC /* CartsViewController.swift */,
+				61CD5EE9298BBA700065ED7F /* OrderViewController.swift */,
+				61CD5EED298BC0FB0065ED7F /* AllOrderViewController.swift */,
+				61CD5EEF298BC10D0065ED7F /* OrderDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				61F37DE7296DB2DE00F09A0A /* Main.storyboard */,
+				614FCCB529784F4A0037E7ED /* TabBarViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				61F37E03296ED63300F09A0A /* ProductModel.swift */,
+				61F37E0D297305A400F09A0A /* CategoryModel.swift */,
+				61CD5EF1298BC5030065ED7F /* OrderMoldel.swift */,
+				61CD5EF3298BD0E70065ED7F /* OrderDetailModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,12 +249,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CD5EF0298BC10D0065ED7F /* OrderDetailViewController.swift in Sources */,
+				61CD5EEE298BC0FB0065ED7F /* AllOrderViewController.swift in Sources */,
+				614FCCB429780E330037E7ED /* DetailViewController.swift in Sources */,
 				61F37E06296EDDCC00F09A0A /* ProductViewController.swift in Sources */,
 				61F37DE6296DB2DE00F09A0A /* ViewController.swift in Sources */,
 				61F37DE2296DB2DE00F09A0A /* AppDelegate.swift in Sources */,
+				61C9F8DA29868B0400EAC4AC /* CartsViewController.swift in Sources */,
+				61F37E0E297305A400F09A0A /* CategoryModel.swift in Sources */,
+				61CD5EF2298BC5030065ED7F /* OrderMoldel.swift in Sources */,
+				61CD5EF4298BD0E70065ED7F /* OrderDetailModel.swift in Sources */,
+				61F37E10297305BD00F09A0A /* CategoryAPI.swift in Sources */,
 				61F37DFC296ED49300F09A0A /* ProductAPI.swift in Sources */,
+				61F37E0A2972FE3A00F09A0A /* ShopViewController.swift in Sources */,
+				614FCCAC2977EB350037E7ED /* ProductByCateViewController.swift in Sources */,
+				61F37E082972F2FE00F09A0A /* NewProductViewController.swift in Sources */,
+				61CD5EEA298BBA700065ED7F /* OrderViewController.swift in Sources */,
+				614FCCB629784F4A0037E7ED /* TabBarViewController.swift in Sources */,
 				61F37DE4296DB2DE00F09A0A /* SceneDelegate.swift in Sources */,
 				61F37E04296ED63300F09A0A /* ProductModel.swift in Sources */,
+				61CD5EEC298BBB710065ED7F /* OrderAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

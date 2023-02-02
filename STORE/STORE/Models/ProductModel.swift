@@ -12,7 +12,7 @@ struct Product: Codable {
     let maSANPham: Int
     let tenSANPham, anhSANPham, chiTietSANPham, maKichCo: String
     let giaTienSANPham: Int
-    let maDanhMuc: String
+    let maDanhMuc, ngayTao: String
 
     enum CodingKeys: String, CodingKey {
         case maSANPham = "ma_san_pham"
@@ -22,6 +22,7 @@ struct Product: Codable {
         case maKichCo = "ma_kich_co"
         case giaTienSANPham = "gia_tien_san_pham"
         case maDanhMuc = "ma_danh_muc"
+        case ngayTao = "ngay_tao"
     }
 }
 
